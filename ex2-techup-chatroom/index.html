@@ -14,7 +14,36 @@
 </head>
 
 <body>
-  <!-- Start coding here -->
+  <header class="chat-header">
+    <h1 class="chat-header__title">Techup Chatroom</h1>
+  </header>
+
+  <main class="chat-layout">
+    <section class="chat-layout__left">
+      <div class="chat-bubble chat-bubble--left chat-bubble--grey">
+        <span class="chat-bubble__icon" aria-hidden="true">😍</span>
+      </div>
+      <div class="chat-bubble chat-bubble--left chat-bubble--grey">
+        <span class="chat-bubble__icon" aria-hidden="true">🥰</span>
+      </div>
+    </section>
+
+    <section class="chat-layout__right" aria-label="ข้อความล่าสุด">
+      <div class="chat-bubble chat-bubble--right chat-bubble--green">
+        <span class="chat-bubble__text">สวัสดีค่า</span>
+      </div>
+
+      <div class="chat-bubble chat-bubble--right chat-bubble--grey chat-bubble--reply">
+        <span class="chat-bubble__text">Coding สนุกจังเลย</span>
+        <span class="chat-bubble__status" aria-hidden="true"></span>
+      </div>
+
+      <div class="chat-bubble chat-bubble--right chat-bubble--green chat-bubble--with-icons">
+        <span class="chat-bubble__icon">😍</span>
+        <span class="chat-bubble__icon">🥰</span>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
