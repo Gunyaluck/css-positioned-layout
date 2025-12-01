@@ -1,1 +1,121 @@
-/* Start coding here */
+body {
+  margin: 0;
+  font-family: "Sarabun", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #ffffff;
+}
+
+.chat-header {
+  background-color: #757575;
+  color: #ffffff;
+  padding: 8px 12px;
+}
+
+.chat-header__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.chat-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  min-height: calc(100vh - 32px);
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.chat-layout__left {
+padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chat-layout__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.chat-bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.chat-bubble--left {
+  width: 120px;
+}
+
+.chat-bubble--right {
+  max-width: 260px;
+}
+
+.chat-bubble--green {
+  background-color: #00b300;
+}
+
+.chat-bubble--grey {
+  background-color: #9b9b9b;
+  color: #fdfdfd;
+}
+
+.chat-bubble__icon {
+  font-size: 18px;
+}
+
+.chat-bubble__text {
+  white-space: nowrap;
+}
+
+.chat-bubble--reply {
+  position: relative;
+  background-color: #e6e6e6;
+  color: #555555;
+}
+
+.chat-bubble--reply .chat-bubble__text {
+  margin-right: 18px;
+}
+
+.chat-bubble__status {
+  position: absolute;
+  right: 1px;
+  top: -0.5px;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #9b9b9b;
+}
+
+.chat-bubble__status::before,
+.chat-bubble__status::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 1.5px;
+  background-color: #ffffff;
+  transform-origin: center;
+}
+
+.chat-bubble__status::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.chat-bubble__status::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.chat-bubble--with-icons {
+  gap: 10px;
+}
